@@ -3,7 +3,7 @@ require 'formula'
 class Cctools < Formula
   homepage ''
   url 'http://opensource.apple.com/tarballs/cctools/cctools-862.tar.gz'
-  sha1 'b5fcc2273b1a5f487cb553e4758ad2ddd94a1152'
+  sha1 '1c47da83e853ce442f56151272c1be9420ed963c'
 
   def install
     prefix.install Dir['include']
