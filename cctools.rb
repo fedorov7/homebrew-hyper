@@ -9,6 +9,8 @@ class Cctools < Formula
 
   depends_on "cctools-headers" => :build
   depends_on "llvm-headers" => :build
+  depends_on "ld64" => :build
+  depends_on "dyld" => :build
 
   def install
     system "make"
