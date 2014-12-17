@@ -1,6 +1,6 @@
 require 'formula'
 
-class Llvm < Formula
+class LlvmHeaders < Formula
   homepage 'http://llvm.org/'
 
   bottle do
