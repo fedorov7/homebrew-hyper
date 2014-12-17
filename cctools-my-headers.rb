@@ -1,7 +1,7 @@
 require "formula"
 
 # The system versions are too old to build ld64
-class CctoolsHeaders < Formula
+class CctoolsMyHeaders < Formula
   homepage "https://opensource.apple.com/"
   url 'http://opensource.apple.com/tarballs/cctools/cctools-862.tar.gz'
   sha1 '1c47da83e853ce442f56151272c1be9420ed963c'

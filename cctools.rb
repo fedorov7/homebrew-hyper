@@ -7,10 +7,9 @@ class Cctools < Formula
 
   keg_only :provided_by_osx
 
-  depends_on "cctools-headers" => :build
-  depends_on "llvm-headers" => :build
+  depends_on "cctools-my-headers" => :build
+  depends_on "llvm-my-headers" => :build
   depends_on "ld64" => :build
-  depends_on "dyld" => :build
 
   def install
     system "make"
