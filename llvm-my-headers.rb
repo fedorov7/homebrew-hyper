@@ -33,6 +33,8 @@ class LlvmMyHeaders < Formula
   keg_only :provided_by_osx
 
   def install
+    (HOMEBREW_PREFIX/"include/llvm").rmtree
+    (HOMEBREW_PREFIX/"include/llvm-c").rmtree
     (HOMEBREW_PREFIX/"include").install Dir["include/*"]
   end
 
