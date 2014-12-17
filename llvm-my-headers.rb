@@ -1,6 +1,6 @@
 require 'formula'
 
-class LlvmHeaders < Formula
+class LlvmMyHeaders < Formula
   homepage 'http://llvm.org/'
 
   stable do
