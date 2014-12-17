@@ -1,12 +1,15 @@
 require 'formula'
 
 class Cctools < Formula
-  homepage ''
+  homepage "https://opensource.apple.com/"
   url 'http://opensource.apple.com/tarballs/cctools/cctools-862.tar.gz'
   sha1 '1c47da83e853ce442f56151272c1be9420ed963c'
 
+  keg_only :provided_by_osx
+
+  depends_on "cctools-headers"
+
   def install
-    prefix.install Dir['include']
     system "make"
     system "make install"
   end
