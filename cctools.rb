@@ -7,7 +7,8 @@ class Cctools < Formula
 
   def install
     prefix.install Dir['include']
-    system "make", "install", "prefix=#{prefix}"
+    system "make"
+    system "make install"
   end
 
   def test
