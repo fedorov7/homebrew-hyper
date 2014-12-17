@@ -41,6 +41,7 @@ class Llvm < Formula
 
   def install
     prefix.install Dir["include/*"]
+  end
 
   def caveats
     <<-EOS.undent
