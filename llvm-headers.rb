@@ -40,7 +40,9 @@ class LlvmHeaders < Formula
   keg_only :provided_by_osx
 
   def install
-    prefix.install Dir["include/*"]
+    local = "#{HOMEBREW_PREFIX}/include"
+    include.install Dir["include/*"]
+    local.install_symlink Dir["#{include}/*"]
   end
 
   def caveats
